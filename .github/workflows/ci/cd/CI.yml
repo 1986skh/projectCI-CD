@@ -1,10 +1,11 @@
-name: Tests Automation
+name: CI
 
 # Déclenche ce workflow à chaque push
 on:
   push:
     branches: [ main ]
-
+    #Déclencher manuellement un workflow GitHub Actions
+  workflow_dispatch:
 jobs:
   test:
     # Utilise l'image d'environnement Ubuntu la plus récente
